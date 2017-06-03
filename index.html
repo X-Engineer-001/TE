@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src='jquery-2.2.4.min.js'></script>
+  <script src='fdb-all.min.js'></script>
 </head>
 <body>
-  <textarea cols="200" rows="45">
-    
-  </textarea>
+  <script>
+    for(var i=0;i<10;i++){
+      $(body).append("<textarea cols='1' rows='1'></textarea>");
+    }
+  </script>
 </body>
 </html>
