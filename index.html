@@ -7,9 +7,12 @@
 <body>
   <script>
     for(var i=0;i<10;i++){
-      $("body").append("<textarea cols='2' rows='1' id='"+i+"'></textarea>");
+      for(var j=0;j<10;j++){
+        $("body").append("<textarea cols='2' rows='1' id='"+i+"'></textarea>");
+      }
+      $("body").append("<br>");
     }
-    setInterval(function(){console.log($("#0").val());},1000);
+    //setInterval(function(){console.log($("#0").val());},1000);
   </script>
 </body>
 </html>
