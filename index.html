@@ -15,7 +15,7 @@
 //       $("body").append("<br>");
 //     }
     var array=[];
-    $("textarea").keydown=function(){
+    $(window).keydown=function(){
       var keycode=event.which||event.keyCode;
       if(keycode==32||keycode==54||keycode==51||keycode==52){
         console.log(keycode);
