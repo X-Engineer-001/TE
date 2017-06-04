@@ -15,12 +15,12 @@
 //       $("body").append("<br>");
 //     }
     var array=[];
-    $(document).keydown=function(){
+    $("textarea").keydown(function(event){
       var keycode=event.which||event.keyCode;
       if(keycode==32||keycode==54||keycode==51||keycode==52){
         console.log(keycode);
       }
-    };
+    });
     //setInterval(function(){console.log($("textarea").val());},1000);
   </script>
 </body>
