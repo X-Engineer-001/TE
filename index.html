@@ -5,14 +5,17 @@
   <script src='fdb-all.min.js'></script>
 </head>
 <body>
+  <textarea cols='200' rows='50'></textarea>
   <script>
-    for(var i=0;i<10;i++){
-      for(var j=0;j<10;j++){
-        $("body").append("<textarea cols='2' rows='1' id='"+i+"'></textarea>");
-      }
-      $("body").append("<br>");
-    }
-    setInterval(function(){console.log($("#0").val());},1000);
+//     var location=0;
+//     for(var i=0;i<10;i++){
+//       for(var j=0;j<10;j++){
+//         $("body").append("<textarea cols='2' rows='1' id='"+i+"'></textarea>");
+//       }
+//       $("body").append("<br>");
+//     }
+    
+    setInterval(function(){console.log($("textarea").val());},1000);
   </script>
 </body>
 </html>
